@@ -1,0 +1,28 @@
+.stats-list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-list__title {
+  color: $color-descripton;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Vasek;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 110%; /* 33px */
+}
+
+.stats-list__item {
+  display: block;
+  max-width: 80px;
+  border-top: solid 1px $color-border;
+}
+
+.stats-list__txt {
+  @extend %txt;
+  display: flex;
+  font-size: 12px;
+  line-height: 140%; /* 16.8px */
+}

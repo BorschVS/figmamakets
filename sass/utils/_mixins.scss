@@ -1,0 +1,30 @@
+// Фиксированный шаблон - placeholder
+// Динамический шаблон - mixin
+
+// @mixin test($color, $type, $size)
+
+// p {
+//     @include test(teal, solid, 1px);
+// }
+
+// @mixin test($color, $type: solid, $size: 1px)
+
+// p {
+//     @include test(teal);
+// }
+
+
+
+// @mixin centeredFlex($type: flex)
+
+// .div {
+//     @include centeredFlex();
+// }
+
+// .p {
+//     @include centeredFlex();
+// }
+
+// button {
+//     @include centeredFlex(inline-flex);
+// }

@@ -1,0 +1,18 @@
+.button {
+  @extend %button;
+  margin-top: 10px;
+
+  &:hover,
+  &:focus {
+    color: $color-primary-white;
+    background-color: $color-title;
+  }
+  &:active {
+    color: $color-title;
+    background-color: $color-primary-white;
+  }
+
+  @media screen and (max-width: 339px) {
+    font-size: 14px;
+  }
+}

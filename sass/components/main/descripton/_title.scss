@@ -1,0 +1,30 @@
+.main-title {
+  @extend %title;
+  margin-bottom: 10px;
+}
+
+.main-title--color {
+  color: $color-interactive;
+}
+
+.title {
+  max-width: 480px;
+  margin-bottom: 10px;
+
+  color: $color-title;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Winston;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 30px */
+}
+
+.subtitle {
+  @extend %subtitle;
+}
+
+.subtitle--size {
+  font-size: 20px;
+  font-weight: 500;
+}

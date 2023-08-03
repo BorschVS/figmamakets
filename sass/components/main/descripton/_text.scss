@@ -1,0 +1,8 @@
+.text {
+  @extend %txt;
+  margin-bottom: 10px;
+}
+
+.description--color {
+  color: $color-title
+}

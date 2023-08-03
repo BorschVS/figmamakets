@@ -1,0 +1,22 @@
+// .thumb {
+//     height:
+//     width: ;
+// }
+
+.thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 68vw;
+  border: solid transparent;
+  border-radius: 50px 50px 0 0;
+}
+
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+border: solid transparent;
+border-radius: inherit;
+}

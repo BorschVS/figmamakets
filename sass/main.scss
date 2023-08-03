@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './utils/fonts';
+
+@import './base/body';
+
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/each';
+@import './utils/mixins';
+
+// main
+
+@import './components/container';
+@import './components/header/page-header';
+@import './components/section';
+@import './components/main/descripton/title';
+@import './components/main/descripton/text';
+@import './components/main/decoration/shines';
+@import './components/main/hero/thumb';
+@import './components/main/hero/button';
+
+@import './components/main/about-us/stats';
+
+@import './components/main/projects/projects-list';
+@import './components/main/projects/cart/cart-settings';

@@ -1,0 +1,14 @@
+.projects-list {
+  @extend %list;
+  @extend %txt;
+}
+
+.projects-list__item {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid $color-border;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border;
+  }
+}

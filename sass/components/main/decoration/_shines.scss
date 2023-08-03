@@ -1,0 +1,35 @@
+.shine-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 295px;
+  height: 15px;
+  color: $color-decoration;
+}
+.icon-shine-line {
+  max-width: 100%;
+  height: 2px;
+}
+
+.shine-list {
+  @extend %list;
+  position: absolute;
+  display: inline-flex;
+  gap: 20px;
+  top: -1px;
+  right: -5px;
+  height: 15px;
+  @media screen and (max-width: 360px) {
+    top: 0px;
+  }
+}
+
+.shine-list__item {
+  display: inline-block;
+  height: inherit;
+}
+
+.shine-list__shine {
+  display: inline-flex;
+  height: inherit;
+}

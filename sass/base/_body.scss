@@ -1,0 +1,33 @@
+body {
+  font-family: $font-primary;
+  background-color: white;
+  color: black;
+  margin: 0;
+
+  // @media (min-width: 800px) {
+  //         background-color: teal;
+  //     }
+}
+
+
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body.modal-open, body.mobile-open {
+  overflow: hidden;
+}

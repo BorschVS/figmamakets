@@ -1,0 +1,130 @@
+// %placeholder_name {
+//     color: black;
+//     font-style: 12px;
+//     padding: 2px;
+// }
+
+// .class-error {
+//     @extend %placeholder_name;
+//     background-color: red;
+// }
+
+// .class-access {
+//     @extend %placeholder_name;
+//     background-color: green;
+// }
+
+%centeredFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%centeredMargin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%listFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+%container {
+  // width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%button {
+  display: inline-block;
+  min-width: 280px;
+  padding: 14px 60px;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: $color-title;
+  background-color: $color-button;
+  border: solid 1px $color-border;
+  border-radius: 40px;
+  box-shadow: none;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137%;
+
+  cursor: pointer;
+
+  transition: color $transition-default, background-color $transition-default, box-shadow $transition-default;
+}
+
+%section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // @media screen and (min-width: $desktop) {
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
+  // }
+}
+
+%title {
+  color: $color-title;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+%subtitle {
+  margin-bottom: 10px;
+
+  color: $color-title;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Winston;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 17.6px */
+}
+
+// }
+
+%txt {
+  color: $color-descripton;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137%; /* 19.18px */
+}
+
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+// Закончить редактирование шаблонов...
