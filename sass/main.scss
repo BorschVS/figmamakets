@@ -9,17 +9,22 @@
 @import './utils/mixins';
 
 // main
+@import './components/default/container';
+@import './components/default/section';
+@import './components/default/thumb';
 
-@import './components/container';
 @import './components/header/page-header';
-@import './components/section';
+
 @import './components/main/descripton/title';
 @import './components/main/descripton/text';
+
 @import './components/main/decoration/shines';
-@import './components/main/hero/thumb';
-@import './components/main/hero/button';
+
+@import './components/default/button';
 
 @import './components/main/about-us/stats';
 
 @import './components/main/projects/projects-list';
-@import './components/main/projects/cart/cart-settings';
+@import './components/main/projects/cart-settings';
+
+@import './components/main/category/category-list'

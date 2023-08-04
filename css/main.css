@@ -47,7 +47,7 @@ body.modal-open, body.mobile-open {
   overflow: hidden;
 }
 
-.cart-list, .projects-list, .stats-list, .shine-list {
+.category-list, .cart-list, .projects-list, .stats-list, .shine-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -111,6 +111,36 @@ body.modal-open, body.mobile-open {
   margin-right: auto;
 }
 
+.section {
+  margin-bottom: 40px;
+}
+
+.section--margin {
+  margin-bottom: 0px;
+}
+
+.thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: solid transparent;
+  border-radius: 50px 50px 0 0;
+}
+
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: solid transparent;
+  border-radius: inherit;
+}
+
+.thumb--border {
+  border-radius: 0;
+}
+
 .page-header {
   padding-top: 5px;
   position: relative;
@@ -165,14 +195,6 @@ body.modal-open, body.mobile-open {
   display: none;
 }
 
-.section {
-  margin-bottom: 40px;
-}
-
-.section--margin {
-  margin-bottom: 0px;
-}
-
 .main-title {
   margin-bottom: 10px;
 }
@@ -204,6 +226,20 @@ body.modal-open, body.mobile-open {
 
 .description--color {
   color: #240532;
+}
+
+.category-list__description {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #240532;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Winston;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
 }
 
 .shine-box {
@@ -242,25 +278,6 @@ body.modal-open, body.mobile-open {
 .shine-list__shine {
   display: inline-flex;
   height: inherit;
-}
-
-.thumb {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 68vw;
-  border: solid transparent;
-  border-radius: 50px 50px 0 0;
-}
-
-.thumb > img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: solid transparent;
-  border-radius: inherit;
 }
 
 .button {
@@ -326,4 +343,8 @@ body.modal-open, body.mobile-open {
 }
 .cart-list__item:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+.category-list__item {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

@@ -274,22 +274,52 @@
       <!-- Layout caregories -->
       <section>
         <div class="container">
-          <h2>Категории макетов</h2>
-          <ul>
-            <li>
-              <div class="thumb">
-                <img src="" alt="" /><span>ОДНОСТРАНИЧНЫЕ</span>
-              </div>
+          <h2 class="title">Категории макетов</h2>
+          <ul class="category-list">
+            <li class="category-list__item">
+              <picture class="thumb thumb--border">
+                <source
+                  srcset="
+                    ./images/category/multipage-300@1x.webp 1x,
+                    ./images/category/multipage-600@2x.webp 2x,
+                    ./images/category/multipage-900@3x.webp 3x
+                  "
+                  type="image/webp"
+                  sizes="(max-width: 767px) 100vw"
+                />
+                <img src="./images/category/multipage-600@2x.jpg" alt="" />
+              </picture>
+              <p class="category-list__description">одностраничные</p>
             </li>
-            <li>
-              <div class="thumb">
-                <img src="" alt="" /><span>МНОГОСТРАНИЧНЫЕ</span>
-              </div>
+            <li class="category-list__item">
+              <picture class="thumb thumb--border">
+                <source
+                  srcset="
+                    /images/hero/mentis-abstract-370.webp     1x,
+                    /images/hero/mentis-abstract-740@2x.webp  2x,
+                    /images/hero/mentis-abstract-1110@3x.webp 3x
+                  "
+                  type="image/webp"
+                  sizes="(max-width: 767px) 100vw"
+                />
+                <img src="./images/category/multipage-600@2x.jpg" alt="" />
+              </picture>
+              <p class="category-list__description">многостраничные</p>
             </li>
-            <li>
-              <div class="thumb">
-                <img src="" alt="" /><span>МАГАЗИНЫ</span>
-              </div>
+            <li class="category-list__item">
+              <picture class="thumb thumb--border">
+                <source
+                  srcset="
+                    /images/hero/mentis-abstract-370.webp     1x,
+                    /images/hero/mentis-abstract-740@2x.webp  2x,
+                    /images/hero/mentis-abstract-1110@3x.webp 3x
+                  "
+                  type="image/webp"
+                  sizes="(max-width: 767px) 100vw"
+                />
+                <img src="./images/category/multipage-600@2x.jpg" alt="" />
+              </picture>
+              <p class="category-list__description">магазины</p>
             </li>
           </ul>
         </div>
