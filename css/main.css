@@ -57,8 +57,6 @@ body.modal-open, body.mobile-open {
   display: inline-block;
   min-width: 280px;
   padding: 14px 60px;
-  margin-left: 10px;
-  margin-right: 5px;
   color: #240532;
   background-color: #D6FF3F;
   border: solid 1px #827089;
@@ -282,6 +280,7 @@ body.modal-open, body.mobile-open {
 
 .button {
   margin-top: 10px;
+  width: inherit;
 }
 .button:hover, .button:focus {
   color: #ffffff;
@@ -293,7 +292,7 @@ body.modal-open, body.mobile-open {
 }
 @media screen and (max-width: 339px) {
   .button {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

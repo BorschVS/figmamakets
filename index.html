@@ -272,7 +272,7 @@
         </div>
       </section>
       <!-- Layout caregories -->
-      <section>
+      <section class="section">
         <div class="container">
           <h2 class="title">Категории макетов</h2>
           <ul class="category-list">
@@ -280,14 +280,19 @@
               <picture class="thumb thumb--border">
                 <source
                   srcset="
-                    ./images/category/multipage-300@1x.webp 1x,
-                    ./images/category/multipage-600@2x.webp 2x,
-                    ./images/category/multipage-900@3x.webp 3x
+                    ./images/layouts/one-page-300.webp 1x,
+                    ./images/layouts/one-page-600@2x.webp 2x,
+                    ./images/layouts/one-page-900@3x.webp 3x
                   "
                   type="image/webp"
                   sizes="(max-width: 767px) 100vw"
                 />
-                <img src="./images/category/multipage-600@2x.jpg" alt="" />
+                <img srcset="
+                ./images/layouts/one-page-300.jpg 1x,
+                ./images/layouts/one-page-600@2x.jpg 2x,
+                ./images/layouts/one-page-900@3x.jpg 3x
+              "
+                src="./images/layouts/one-page-600@2x.jpg" alt="" />
               </picture>
               <p class="category-list__description">одностраничные</p>
             </li>
@@ -295,14 +300,19 @@
               <picture class="thumb thumb--border">
                 <source
                   srcset="
-                    /images/hero/mentis-abstract-370.webp     1x,
-                    /images/hero/mentis-abstract-740@2x.webp  2x,
-                    /images/hero/mentis-abstract-1110@3x.webp 3x
+                    ./images/layouts/multipage-300.webp 1x,
+                    ./images/layouts/multipage-600@2x.webp 2x,
+                    ./images/layouts/multipage-900@3x.webp 3x
                   "
                   type="image/webp"
                   sizes="(max-width: 767px) 100vw"
                 />
-                <img src="./images/category/multipage-600@2x.jpg" alt="" />
+                <img srcset="
+                ./images/layouts/multipage-300.jpg 1x,
+                ./images/layouts/multipage-600@2x.jpg 2x,
+                ./images/layouts/multipage-900@3x.jpg 3x
+              "
+                src="./images/layouts/multipage-600@2x.jpg" alt="" />
               </picture>
               <p class="category-list__description">многостраничные</p>
             </li>
@@ -310,14 +320,19 @@
               <picture class="thumb thumb--border">
                 <source
                   srcset="
-                    /images/hero/mentis-abstract-370.webp     1x,
-                    /images/hero/mentis-abstract-740@2x.webp  2x,
-                    /images/hero/mentis-abstract-1110@3x.webp 3x
+                    ./images/layouts/shop-300.webp 1x,
+                    ./images/layouts/shop-600@2x.webp 2x,
+                    ./images/layouts/shop-900@3x.webp 3x
                   "
                   type="image/webp"
                   sizes="(max-width: 767px) 100vw"
                 />
-                <img src="./images/category/multipage-600@2x.jpg" alt="" />
+                <img srcset="
+                ./images/layouts/shop-300.jpg 1x,
+                ./images/layouts/shop-600@2x.jpg 2x,
+                ./images/layouts/shop-900@3x.jpg 3x
+              "
+                src="./images/layouts/shop-600@2x.jpg" alt="" />
               </picture>
               <p class="category-list__description">магазины</p>
             </li>
@@ -325,17 +340,17 @@
         </div>
       </section>
 
-      <section>
+      <section class="section">
         <div class="container">
-          <h2>Новости</h2>
-          <p>
+          <h2 class="title">Новости</h2>
+          <p class="text description--color description--weight">
             Мы предлагаем вам создать уникальный дизайн для веб-сайта с
             использованием Figma. Вы можете проявить свою креативность,
             экспериментировать с цветами, композицией и типографикой. Будьте
             свободны в своем вдохновении и представьте нам удивительный дизайн,
             который будет визуально привлекателен и функционален.
           </p>
-          <p>Дедлайн: 30 июня 2023 г.</p>
+          <p class="text description--color">Дедлайн: 30 июня 2023 г.</p>
           <button type="button">УЧАСТВОВАТЬ</button>
         </div>
       </section>

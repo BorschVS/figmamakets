@@ -50,8 +50,6 @@
   display: inline-block;
   min-width: 280px;
   padding: 14px 60px;
-  margin-left: 10px;
-  margin-right: 5px;
   color: $color-title;
   background-color: $color-button;
   border: solid 1px $color-border;
@@ -106,7 +104,7 @@
 // }
 
 %txt {
-  color: $color-descripton;
+  color: $color-txt;
   font-feature-settings: "clig" off, "liga" off;
   font-size: 14px;
   font-style: normal;
