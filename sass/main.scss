@@ -9,9 +9,9 @@
 @import './utils/mixins';
 
 // main
-@import './components/default/container';
-@import './components/default/section';
-@import './components/default/thumb';
+@import './components/default-components/container';
+@import './components/default-components/section';
+@import './components/default-components/thumb';
 
 @import './components/header/page-header';
 
@@ -20,7 +20,7 @@
 
 @import './components/main/decoration/shines';
 
-@import './components/default/button';
+@import './components/default-components/button';
 
 @import './components/main/about-us/stats';
 
@@ -28,3 +28,4 @@
 @import './components/main/projects/cart-settings';
 
 @import './components/main/category/category-list';
+@import './components/main/faq/faq-list';

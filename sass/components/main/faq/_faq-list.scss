@@ -1,0 +1,11 @@
+.faq-list {
+    @extend %list;
+    
+}
+
+.subtitle--border {
+    border-bottom: 1px solid $color-border;
+    border-top: 1px solid $color-border;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

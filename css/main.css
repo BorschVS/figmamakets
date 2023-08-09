@@ -47,7 +47,7 @@ body.modal-open, body.mobile-open {
   overflow: hidden;
 }
 
-.category-list, .cart-list, .projects-list, .stats-list, .shine-list {
+.faq-list, .category-list, .cart-list, .projects-list, .stats-list, .shine-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -226,6 +226,10 @@ body.modal-open, body.mobile-open {
   color: #240532;
 }
 
+.description--weight {
+  font-weight: 400;
+}
+
 .category-list__description {
   position: absolute;
   left: 10px;
@@ -296,6 +300,10 @@ body.modal-open, body.mobile-open {
   }
 }
 
+.button-margin {
+  margin-top: 0;
+}
+
 .stats-list {
   display: flex;
   justify-content: space-between;
@@ -346,4 +354,11 @@ body.modal-open, body.mobile-open {
 
 .category-list__item {
   position: relative;
+}
+
+.subtitle--border {
+  border-bottom: 1px solid #827089;
+  border-top: 1px solid #827089;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
