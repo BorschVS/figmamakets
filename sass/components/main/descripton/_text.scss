@@ -4,7 +4,7 @@
 }
 
 .description--color {
-  color: $color-title;
+  color: $color-primary;
 }
 
 .description--weight {
@@ -15,7 +15,6 @@
   position: absolute;
   left: 10px;
   bottom: 10px;
-  color: $color-title;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Winston;
   font-size: 16px;

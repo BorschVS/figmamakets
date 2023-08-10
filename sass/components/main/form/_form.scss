@@ -1,0 +1,25 @@
+.form {
+  margin-top: 40px;
+}
+
+.form__input {
+  width: 100%;
+  padding-left: 10px;
+  border: 1px solid $color-border;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+
+  transition: $transition-default;
+
+  &::placeholder {
+    color: $color-descripton;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border: 1px solid $color-primary;
+}
+}

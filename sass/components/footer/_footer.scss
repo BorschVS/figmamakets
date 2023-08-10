@@ -1,0 +1,20 @@
+.footer-list {
+    @extend %list;
+    display: flex;
+    gap: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-top: 1px solid $color-border;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: $color-descripton;
+
+
+}
+
+.footer-list__item {
+    margin-top: 10px;
+}
