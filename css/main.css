@@ -33,6 +33,10 @@ body.modal-open, body.mobile-open {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -47,7 +51,7 @@ body.modal-open, body.mobile-open {
   overflow: hidden;
 }
 
-.footer-list, .faq-list, .category-list, .cart-list, .projects-list, .stats-list, .shine-list {
+.footer-list, .faq-list, .category-list, .cart-list, .projects-list, .stats-list, .shine-list, .menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -153,7 +157,7 @@ body.modal-open, body.mobile-open {
 }
 
 .page-header {
-  padding-top: 5px;
+  padding-top: 10px;
   position: relative;
   height: 22px;
   margin-bottom: 10px;
@@ -167,6 +171,7 @@ body.modal-open, body.mobile-open {
 
 .logo {
   display: inline-block;
+  z-index: 2;
 }
 
 .logo__icon {
@@ -186,11 +191,7 @@ body.modal-open, body.mobile-open {
 
 .menu-button__icon {
   height: 30px;
-  transition: fill 250ms linear;
   width: 30px;
-}
-.menu-button:active .menu-button__icon, .menu-button:hover .menu-button__icon, .menu-button:focus .menu-button__icon {
-  fill: green;
 }
 
 .menu-button .icon-close {
@@ -202,8 +203,52 @@ body.modal-open, body.mobile-open {
   transform: translateX(30%);
 }
 
+.menu-button.is-open {
+  z-index: 2;
+}
+
 .menu-button.is-open .icon-open {
   display: none;
+}
+
+.menu-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F9F7F8;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-100%, 0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  display: block;
+  position: absolute;
+  visibility: visible;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.menu-list {
+  margin-top: 14vh;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-list__item {
+  padding-bottom: 4vh;
+  padding-left: 10px;
 }
 
 .main-title {
@@ -402,4 +447,8 @@ body.modal-open, body.mobile-open {
 
 .footer-list__item {
   margin-top: 10px;
+}
+
+.footer-list__link {
+  color: #665070;
 }/*# sourceMappingURL=main.css.map */

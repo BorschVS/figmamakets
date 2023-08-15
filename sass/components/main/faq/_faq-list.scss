@@ -1,13 +1,12 @@
 .faq-list {
-    @extend %list;
-    
+  @extend %list;
 }
 
 .faq-list__item--border {
-    border-bottom: 1px solid $color-border;
-    padding-top: 10px;
-  
-    &:nth-child(1) {
-      border-top: 1px solid $color-border;
-    }
+  border-bottom: 1px solid $color-border;
+  padding-top: 10px;
+
+  &:nth-child(1) {
+    border-top: 1px solid $color-border;
+  }
 }
