@@ -11,3 +11,20 @@
     margin-bottom: 0;
   }
 }
+
+.cart-box {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: overflow 250ms linear, transform 250ms linear
+    visibility 250ms linear;
+}
+
+.cart-box.is-active {
+  position: static;
+  overflow: visible;
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}

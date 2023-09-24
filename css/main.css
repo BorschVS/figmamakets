@@ -376,6 +376,10 @@ a {
   line-height: 140%; /* 16.8px */
 }
 
+.projects-list {
+  position: relative;
+}
+
 .projects-list__item {
   padding-top: 10px;
   margin-bottom: 10px;
@@ -395,6 +399,22 @@ a {
 }
 .cart-list__item:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+.cart-box {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: overflow 250ms linear, transform 250ms linear visibility 250ms linear;
+}
+
+.cart-box.is-active {
+  position: static;
+  overflow: visible;
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
 }
 
 .category-list__item {

@@ -1,4 +1,5 @@
 .projects-list {
+  position: relative;
   @extend %list;
   @extend %txt;
 }
