@@ -6,10 +6,10 @@
 
 .projects-list__item {
   padding-top: 10px;
-  margin-bottom: 10px;
   border-top: 1px solid $color-border;
 
   &:last-child {
+    padding-bottom: 10px;
     border-bottom: 1px solid $color-border;
   }
 }

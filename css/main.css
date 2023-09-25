@@ -382,10 +382,10 @@ a {
 
 .projects-list__item {
   padding-top: 10px;
-  margin-bottom: 10px;
   border-top: 1px solid #827089;
 }
 .projects-list__item:last-child {
+  padding-bottom: 10px;
   border-bottom: 1px solid #827089;
 }
 
@@ -402,14 +402,27 @@ a {
 }
 
 .cart-box {
-  position: absolute;
+  max-height: 0;
   opacity: 0;
-  visibility: hidden;
   overflow: hidden;
-  transition: overflow 250ms linear, transform 250ms linear visibility 250ms linear;
+  visibility: hidden;
+  transition: visibility 250ms ease-in-out, transform 250ms ease-in-out, max-height 250ms ease-in-out, opacity 250ms ease-in-out;
+}
+
+.cart-box .button {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .cart-box.is-active {
+  max-height: 110vh;
+  overflow: visible;
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-active .cart-box {
+  transform: translate(0);
   position: static;
   overflow: visible;
   transform: scale(1);
