@@ -1,24 +1,27 @@
 const list = document.querySelector(".projects-list");
 
-const listItem = document.querySelector(".projects-list__item");
-// const cartBox = document.querySelector(".cart-box");
+list.addEventListener("click", openCardBox);
 
-list.addEventListener("click", onListClick);
-function onListClick(evt) {
-  let activeEls = list.querySelectorAll(".cart-box.is-active");
+function openCardBox(e) {
+  const parentItem = e.target.parentElement;
 
-  activeEls.forEach((el) => {
-    if (el) {
-      el.classList.toggle("is-active");
-    }
-  });
-
-  if (evt.target.classList.contains("projects-list__item")) {
+  if (!parentItem || parentItem === list || null) {
     return;
   }
 
-  const swatchEl = evt.target;
-  const parentEl = swatchEl.closest(".projects-list__item");
-  const childEl = parentEl.querySelector(".cart-box");
-  childEl.classList.toggle("is-active");
+  removeCardBox();
+
+  const cardBox = parentItem.querySelector(".card-box");
+  cardBox.classList.toggle("is-active");
+}
+// сделать функцию, которя будет открывать cardBox
+
+function removeCardBox() {
+  const allCardBoxes = document.querySelectorAll(".is-active");
+
+  allCardBoxes.forEach((box) => {
+    if (box.classList.contains("is-active")) {
+      box.classList.toggle("is-active");
+    }
+  });
 }

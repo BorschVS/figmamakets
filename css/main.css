@@ -51,7 +51,7 @@ a {
   overflow: hidden;
 }
 
-.footer-list, .faq-list, .category-list, .cart-list, .projects-list, .stats-list, .shine-list, .menu-list {
+.footer-list, .faq-list, .category-list, .card-list, .projects-list, .stats-list, .shine-list, .menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -270,6 +270,7 @@ a {
 .subtitle--size {
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .text {
@@ -376,56 +377,50 @@ a {
   line-height: 140%; /* 16.8px */
 }
 
-.projects-list {
-  position: relative;
-}
-
 .projects-list__item {
   padding-top: 10px;
   border-top: 1px solid #827089;
 }
 .projects-list__item:last-child {
-  padding-bottom: 10px;
   border-bottom: 1px solid #827089;
 }
 
-.cart-list {
+.card-list {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.cart-list__item {
+.card-list__item {
   margin-bottom: 5px;
 }
-.cart-list__item:nth-last-child(1) {
+.card-list__item:nth-last-child(1) {
   margin-bottom: 0;
 }
 
-.cart-box {
+.card-box {
+  position: relative;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   visibility: hidden;
-  transition: visibility 250ms ease-in-out, transform 250ms ease-in-out, max-height 250ms ease-in-out, opacity 250ms ease-in-out;
+  transform: translate(-100vw, 0);
+  transition: visibility 250ms ease-in-out, transform 250ms ease-in-out 250ms, max-height 250ms ease-in-out, opacity 250ms ease-in-out;
 }
 
-.cart-box .button {
+.card-box .button {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.cart-box.is-active {
-  max-height: 110vh;
+.card-box.is-active {
+  max-height: 200vh;
   overflow: visible;
   opacity: 1;
   visibility: visible;
+  transform: translateX(0);
 }
-
-.is-active .cart-box {
-  transform: translate(0);
-  position: static;
+.is-active .card-box {
   overflow: visible;
-  transform: scale(1);
   opacity: 1;
   visibility: visible;
 }

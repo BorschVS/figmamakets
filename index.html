@@ -33,20 +33,16 @@
             type="button"
             class="menu-button"
             data-menu-button
+            data-mobile
             data-mobile-open
             aria-expanded="true"
           >
-            <svg
-              class="menu-button__icon"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="icon-open"
-                href="./images/symbol-defs.svg#mobile-menu"
-              ></use>
+            <svg class="menu-button__icon" aria-label="Переключатель мобильного меню">
+              <use class="icon-open" href="./images/symbol-defs.svg#mobile-menu"></use>
               <use
                 width="11"
                 class="icon-close"
+                data-mobile-close
                 href="./images/symbol-defs.svg#close-menu"
               ></use>
             </svg>
@@ -91,9 +87,9 @@
             </svg>
           </button> -->
           <p class="text">
-            Один из самых качественных и тщательно отобранных сборников макетов
-            Figma. У нас вы найдете образовательный материал, который поможет
-            вам дополнить портфолио и повысить свои скиллы!
+            Один из самых качественных и тщательно отобранных сборников макетов Figma. У нас вы
+            найдете образовательный материал, который поможет вам дополнить портфолио и повысить
+            свои скиллы!
           </p>
           <!-- <ul>
               <li>#лендинг</li>
@@ -143,12 +139,7 @@
               alt="Абстрактная картина из разноцветных волокон"
             />
           </picture>
-          <a
-            class="button"
-            href="#"
-            download
-            target="_blank"
-            rel="noreferrer noopener"
+          <a class="button" href="#" download target="_blank" rel="noreferrer noopener"
             >ПЕРЕЙТИ В ТЕЛЕГРАМ</a
           >
           <!-- <svg>
@@ -161,14 +152,13 @@
         <div class="container">
           <h2 class="title">О нас</h2>
           <h3 class="subtitle">
-            Миссия нашей команды - собрать лучшие макеты, которые будут полезны
-            верстальщикам и дизайнерам
+            Миссия нашей команды - собрать лучшие макеты, которые будут полезны верстальщикам и
+            дизайнерам
           </h3>
           <p class="text">
-            Мы собираем коллекцию бесценного материала, который в легком доступе
-            для каждого из вас. С нашими макетами ваш процесс обучения будет не
-            только полезным, но и приятным. Сверстав макет из нашей коллекции,
-            вы сможете дополнить свое портфолио уникальными проектами.
+            Мы собираем коллекцию бесценного материала, который в легком доступе для каждого из вас.
+            С нашими макетами ваш процесс обучения будет не только полезным, но и приятным. Сверстав
+            макет из нашей коллекции, вы сможете дополнить свое портфолио уникальными проектами.
           </p>
           <ul class="stats-list">
             <li class="stats-list__item">
@@ -192,48 +182,38 @@
         <div class="container">
           <h2 class="title">Самое популярное</h2>
           <ul class="projects-list">
-            <li class="projects-list__item">
-              <h3 class="subtitle subtitle--size">
-                Макет лендинга для системы блокчейн
-              </h3>
-              <div class="cart-box">
+            <li class="projects-list__item 1">
+              <h3 class="subtitle subtitle--size subtitle--js">Макет лендинга по организации экскурсий</h3>
+              <div class="card-box">
                 <p class="project-date">29 мая 2023 г.</p>
-              
-                <ul class="cart-list">
-                  <li class="cart-list__item">
+
+                <ul class="card-list">
+                  <li class="card-list__item">
                     <p class="description">
-                      Уровень сложности:<span class="description--color">
-                        Сложный</span
-                      >
+                      Уровень сложности:<span class="description--color"> Сложный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Тип:<span class="description--color">
-                        Многостраничный сайт</span
-                      >
+                      Тип:<span class="description--color"> Многостраничный сайт</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Адаптивность:<span class="description--color">
-                        Адаптивный</span
-                      >
+                      Адаптивность:<span class="description--color"> Адаптивный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Язык:<span class="description--color"> EN</span>
-                    </p>
+                  <li class="card-list__item">
+                    <p class="description">Язык:<span class="description--color"> EN</span></p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
                       Цена макета:
                       <span class="description--color"> ~18000-21000 ₽</span>
                     </p>
                   </li>
                 </ul>
-                <picture class="cart-thumb">
+                <picture class="card-thumb">
                   <source
                     srcset="
                       ./images/projects/blockchain-300.webp    1x,
@@ -253,52 +233,97 @@
                     alt="Абстрактная картина из разноцветных волокон"
                   />
                 </picture>
-                <a class="button" href="#">Скачать</a>
+                <a class="button" download="">Скачать</a>
+              </div>
+            </li>
+
+            <li class="projects-list__item 2">
+              <h3 class="subtitle subtitle--size">Макет лендинга по организации экскурсий</h3>
+              <div class="card-box">
+                <p class="project-date">29 мая 2023 г.</p>
+
+                <ul class="card-list">
+                  <li class="card-list__item">
+                    <p class="description">
+                      Уровень сложности:<span class="description--color"> Сложный</span>
+                    </p>
+                  </li>
+                  <li class="card-list__item">
+                    <p class="description">
+                      Тип:<span class="description--color"> Многостраничный сайт</span>
+                    </p>
+                  </li>
+                  <li class="card-list__item">
+                    <p class="description">
+                      Адаптивность:<span class="description--color"> Адаптивный</span>
+                    </p>
+                  </li>
+                  <li class="card-list__item">
+                    <p class="description">Язык:<span class="description--color"> EN</span></p>
+                  </li>
+                  <li class="card-list__item">
+                    <p class="description">
+                      Цена макета:
+                      <span class="description--color"> ~18000-21000 ₽</span>
+                    </p>
+                  </li>
+                </ul>
+                <picture class="card-thumb">
+                  <source
+                    srcset="
+                      ./images/projects/blockchain-300.webp    1x,
+                      ./images/projects/blockchain-600@2x.webp 2x,
+                      ./images/projects/blockchain-900@3x.webp 3x
+                    "
+                    type="image/webp"
+                    sizes="(max-width: 767px) 100vw"
+                  />
+                  <img
+                    srcset="
+                      ./images/projects/blockchain-300.jpg    1x,
+                      ./images/projects/blockchain-600@2x.jpg 2x,
+                      ./images/projects/blockchain-900@3x.jpg 3x
+                    "
+                    src="/images/projects/blockchain-600@2x.jpg"
+                    alt="Абстрактная картина из разноцветных волокон"
+                  />
+                </picture>
+                <a class="button" download="">Скачать</a>
               </div>
             </li>
 
             <li class="projects-list__item">
-              <h3 class="subtitle subtitle--size">
-                Макет лендинга по организации экскурсий
-              </h3>
-              <div class="cart-box">
+              <h3 class="subtitle subtitle--size">Макет лендинга по организации экскурсий</h3>
+              <div class="card-box">
                 <p class="project-date">29 мая 2023 г.</p>
-              
-                <ul class="cart-list">
-                  <li class="cart-list__item">
+
+                <ul class="card-list">
+                  <li class="card-list__item">
                     <p class="description">
-                      Уровень сложности:<span class="description--color">
-                        Сложный</span
-                      >
+                      Уровень сложности:<span class="description--color"> Сложный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Тип:<span class="description--color">
-                        Многостраничный сайт</span
-                      >
+                      Тип:<span class="description--color"> Многостраничный сайт</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Адаптивность:<span class="description--color">
-                        Адаптивный</span
-                      >
+                      Адаптивность:<span class="description--color"> Адаптивный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Язык:<span class="description--color"> EN</span>
-                    </p>
+                  <li class="card-list__item">
+                    <p class="description">Язык:<span class="description--color"> EN</span></p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
                       Цена макета:
                       <span class="description--color"> ~18000-21000 ₽</span>
                     </p>
                   </li>
                 </ul>
-                <picture class="cart-thumb">
+                <picture class="card-thumb">
                   <source
                     srcset="
                       ./images/projects/blockchain-300.webp    1x,
@@ -318,52 +343,42 @@
                     alt="Абстрактная картина из разноцветных волокон"
                   />
                 </picture>
-                <a class="button" href="#">Скачать</a>
+                <a class="button" download="">Скачать</a>
               </div>
             </li>
 
             <li class="projects-list__item">
-              <h3 class="subtitle subtitle--size">
-                Макет лендинга для университета
-              </h3>
-              <div class="cart-box">
+              <h3 class="subtitle subtitle--size">Макет лендинга по организации экскурсий</h3>
+              <div class="card-box">
                 <p class="project-date">29 мая 2023 г.</p>
-              
-                <ul class="cart-list">
-                  <li class="cart-list__item">
+
+                <ul class="card-list">
+                  <li class="card-list__item">
                     <p class="description">
-                      Уровень сложности:<span class="description--color">
-                        Сложный</span
-                      >
+                      Уровень сложности:<span class="description--color"> Сложный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Тип:<span class="description--color">
-                        Многостраничный сайт</span
-                      >
+                      Тип:<span class="description--color"> Многостраничный сайт</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Адаптивность:<span class="description--color">
-                        Адаптивный</span
-                      >
+                      Адаптивность:<span class="description--color"> Адаптивный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Язык:<span class="description--color"> EN</span>
-                    </p>
+                  <li class="card-list__item">
+                    <p class="description">Язык:<span class="description--color"> EN</span></p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
                       Цена макета:
                       <span class="description--color"> ~18000-21000 ₽</span>
                     </p>
                   </li>
                 </ul>
-                <picture class="cart-thumb">
+                <picture class="card-thumb">
                   <source
                     srcset="
                       ./images/projects/blockchain-300.webp    1x,
@@ -383,117 +398,42 @@
                     alt="Абстрактная картина из разноцветных волокон"
                   />
                 </picture>
-                <a class="button" href="#">Скачать</a>
+                <a class="button" download="">Скачать</a>
               </div>
             </li>
 
             <li class="projects-list__item">
-              <h3 class="subtitle subtitle--size">
-                Макет лендинга для SEO студии
-              </h3>
-              <div class="cart-box">
+              <h3 class="subtitle subtitle--size">Макет лендинга по организации экскурсий</h3>
+              <div class="card-box">
                 <p class="project-date">29 мая 2023 г.</p>
-              
-                <ul class="cart-list">
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Уровень сложности:<span class="description--color">
-                        Сложный</span
-                      >
-                    </p>
-                  </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Тип:<span class="description--color">
-                        Многостраничный сайт</span
-                      >
-                    </p>
-                  </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Адаптивность:<span class="description--color">
-                        Адаптивный</span
-                      >
-                    </p>
-                  </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Язык:<span class="description--color"> EN</span>
-                    </p>
-                  </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Цена макета:
-                      <span class="description--color"> ~18000-21000 ₽</span>
-                    </p>
-                  </li>
-                </ul>
-                <picture class="cart-thumb">
-                  <source
-                    srcset="
-                      ./images/projects/blockchain-300.webp    1x,
-                      ./images/projects/blockchain-600@2x.webp 2x,
-                      ./images/projects/blockchain-900@3x.webp 3x
-                    "
-                    type="image/webp"
-                    sizes="(max-width: 767px) 100vw"
-                  />
-                  <img
-                    srcset="
-                      ./images/projects/blockchain-300.jpg    1x,
-                      ./images/projects/blockchain-600@2x.jpg 2x,
-                      ./images/projects/blockchain-900@3x.jpg 3x
-                    "
-                    src="/images/projects/blockchain-600@2x.jpg"
-                    alt="Абстрактная картина из разноцветных волокон"
-                  />
-                </picture>
-                <a class="button" href="#">Скачать</a>
-              </div>
-            </li>
 
-            <li class="projects-list__item">
-              <h3 class="subtitle subtitle--size">
-                Макет магазина по продаже военной одежды
-              </h3>
-              <div class="cart-box">
-                <p class="project-date">29 мая 2023 г.</p>
-              
-                <ul class="cart-list">
-                  <li class="cart-list__item">
+                <ul class="card-list">
+                  <li class="card-list__item">
                     <p class="description">
-                      Уровень сложности:<span class="description--color">
-                        Сложный</span
-                      >
+                      Уровень сложности:<span class="description--color"> Сложный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Тип:<span class="description--color">
-                        Многостраничный сайт</span
-                      >
+                      Тип:<span class="description--color"> Многостраничный сайт</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
-                      Адаптивность:<span class="description--color">
-                        Адаптивный</span
-                      >
+                      Адаптивность:<span class="description--color"> Адаптивный</span>
                     </p>
                   </li>
-                  <li class="cart-list__item">
-                    <p class="description">
-                      Язык:<span class="description--color"> EN</span>
-                    </p>
+                  <li class="card-list__item">
+                    <p class="description">Язык:<span class="description--color"> EN</span></p>
                   </li>
-                  <li class="cart-list__item">
+                  <li class="card-list__item">
                     <p class="description">
                       Цена макета:
                       <span class="description--color"> ~18000-21000 ₽</span>
                     </p>
                   </li>
                 </ul>
-                <picture class="cart-thumb">
+                <picture class="card-thumb">
                   <source
                     srcset="
                       ./images/projects/blockchain-300.webp    1x,
@@ -513,7 +453,7 @@
                     alt="Абстрактная картина из разноцветных волокон"
                   />
                 </picture>
-                <a class="button" href="#">Скачать</a>
+                <a class="button" download="">Скачать</a>
               </div>
             </li>
           </ul>
@@ -601,16 +541,13 @@
         <div class="container">
           <h2 class="title">Новости</h2>
           <p class="text description--weight">
-            Мы предлагаем вам создать уникальный дизайн для веб-сайта с
-            использованием Figma. Вы можете проявить свою креативность,
-            экспериментировать с цветами, композицией и типографикой. Будьте
-            свободны в своем вдохновении и представьте нам удивительный дизайн,
+            Мы предлагаем вам создать уникальный дизайн для веб-сайта с использованием Figma. Вы
+            можете проявить свою креативность, экспериментировать с цветами, композицией и
+            типографикой. Будьте свободны в своем вдохновении и представьте нам удивительный дизайн,
             который будет визуально привлекателен и функционален.
           </p>
           <p class="text description--color">Дедлайн: 30 июня 2023 г.</p>
-          <button type="button" class="button button-margin">
-            УЧАСТВОВАТЬ
-          </button>
+          <button type="button" class="button button-margin">УЧАСТВОВАТЬ</button>
         </div>
       </section>
 
@@ -642,8 +579,8 @@
         <div class="container">
           <h2 class="title">Наши контакты</h2>
           <p class="text">
-            Если ты хочешь связаться с нами, напиши сюда свои данные. Мы
-            свяжемся с тобой в ближайшее время
+            Если ты хочешь связаться с нами, напиши сюда свои данные. Мы свяжемся с тобой в
+            ближайшее время
           </p>
           <label class="form__label">
             <input class="form__input" type="text" placeholder="Имя" />
